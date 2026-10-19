@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source": "C:\\Users\\george luu\\Transformer-Based-Semantic-Segmentation-of-Underwater-Imagery\\SUIM",
+  "output": "C:\\Users\\george luu\\Transformer-Based-Semantic-Segmentation-of-Underwater-Imagery\\SUIM_new",
+  "dry_run": false,
+  "color_policy": "preserve",
+  "input_pairs": 1525,
+  "reviewed_crops_applied": 37,
+  "reviewed_pairs_already_aligned": 0,
+  "input_pairs_with_noncanonical_colors": 85,
+  "input_noncanonical_pixels_after_crop": 9588279,
+  "duplicate_image_groups": 9,
+  "duplicate_groups_with_different_masks": 9,
+  "duplicate_groups_kept_all": 9,
+  "excluded_pairs": 0,
+  "output_pairs": 1525,
+  "output_rgb_noncanonical_pixels": 9588279,
+  "output_class_mask_counts": null,
+  "output_ignored_pixels": 0,
+  "test_inventory_pairs": 110,
+  "test_exported": false
+}
