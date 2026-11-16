@@ -1,0 +1,35 @@
+{
+  "training_image_folder": "C:\\Users\\darre\\OneDrive\\Desktop\\SUIM\\cleaned_suim\\train_val\\images",
+  "train_val_images": 1525,
+  "test_images": 110,
+  "overlapping_test_images": 4,
+  "test_images_after_exclusion": 106,
+  "overlaps": [
+    {
+      "test_stem": "n_l_29_",
+      "train_val_stem": "d_r_587_",
+      "partition": "validation",
+      "image_sha256": "1ea8275e996c870bf63a051f48735ef299c6049a0ad9886b55c72747bf60ef59"
+    },
+    {
+      "test_stem": "n_l_87_",
+      "train_val_stem": "w_r_11_",
+      "partition": "train",
+      "image_sha256": "616e2e5b33acf303a35147bc7c510970c9bbf21ed7dfd9ae685eb0ae770129df"
+    },
+    {
+      "test_stem": "n_l_0_",
+      "train_val_stem": "f_r_1500_",
+      "partition": "train",
+      "image_sha256": "b098f85b3c6524454acea653a7bb3a2cf5cd06a6b9ab037d335629c8c50ff514"
+    },
+    {
+      "test_stem": "d_r_386_",
+      "train_val_stem": "n_l_106_",
+      "partition": "train",
+      "image_sha256": "e6d30249ec6352eb19d33bfaaa73f79a66828378079cb17cd6ba05abdaee0755"
+    }
+  ],
+  "scope": "Exact SHA-256 image-file matches only; no perceptual/near-duplicate claim.",
+  "scoring": "Same saved predictions; unchanged upstream per-image/class averaging; no model retuning."
+}

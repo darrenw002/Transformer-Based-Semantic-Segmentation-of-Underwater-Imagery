@@ -1,0 +1,13 @@
+model,mode,protocol,test_images,boundary_f_pct,iou_pct
+unet_resnet18,train,original_test,110,51.526337068677876,57.39914446364702
+unet_resnet18,train,exclude_exact_train_val_overlap,106,51.65835941225758,57.95337527480477
+unet_resnet18_noaug,train,original_test,110,37.5461348904298,41.9229766552598
+unet_resnet18_noaug,train,exclude_exact_train_val_overlap,106,37.10820464869574,41.54890864009393
+segformer_b0,train,original_test,110,46.15043423074023,52.219877515229584
+segformer_b0,train,exclude_exact_train_val_overlap,106,46.85879519860005,53.11315879533093
+segformer_b0_noaug,train,original_test,110,45.13312675503645,51.4706308043485
+segformer_b0_noaug,train,exclude_exact_train_val_overlap,106,46.083686356523785,52.715308922498934
+unetformer_resnet18,train,original_test,110,51.76708737840365,56.15872661415771
+unetformer_resnet18,train,exclude_exact_train_val_overlap,106,52.923289898686605,57.35866569191777
+unetformer_resnet18_noaug,train,original_test,110,49.8054940909694,55.592626458007565
+unetformer_resnet18_noaug,train,exclude_exact_train_val_overlap,106,50.35633974050485,56.03676817794123

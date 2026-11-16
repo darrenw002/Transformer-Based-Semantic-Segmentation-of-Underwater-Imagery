@@ -1,0 +1,105 @@
+{
+  "experiment": "Same-seed existing geometric augmentation versus augmentation disabled",
+  "primary_protocol": "exclude_exact_train_val_overlap",
+  "delta_definition": "augmented score minus no-augmentation score, percentage points",
+  "completed_models": [
+    "segformer_b0",
+    "unet_resnet18",
+    "unetformer_resnet18"
+  ],
+  "planned_models": [
+    "unet_resnet18",
+    "segformer_b0",
+    "unetformer_resnet18"
+  ],
+  "seed": 42,
+  "epochs_per_model_per_condition": 50,
+  "baseline_arm": "Reuse the completed augmented runs; no hyperparameters are changed using TEST",
+  "limitations": "Single seed; tests existing flips/geometric policy only; excludes exact file overlap, not near-duplicates",
+  "results": [
+    {
+      "model": "unet_resnet18",
+      "protocol": "exclude_exact_train_val_overlap",
+      "test_images": 106,
+      "augmented_iou_pct": 57.95337527480477,
+      "augmented_boundary_f_pct": 51.65835941225758,
+      "noaug_iou_pct": 41.54890864009393,
+      "noaug_boundary_f_pct": 37.10820464869574,
+      "augmentation_iou_gain_pp": 16.404466634710843,
+      "augmentation_boundary_f_gain_pp": 14.550154763561842,
+      "augmented_best_epoch": 34,
+      "noaug_best_epoch": 19,
+      "status": "complete"
+    },
+    {
+      "model": "unet_resnet18",
+      "protocol": "original_test",
+      "test_images": 110,
+      "augmented_iou_pct": 57.39914446364702,
+      "augmented_boundary_f_pct": 51.526337068677876,
+      "noaug_iou_pct": 41.9229766552598,
+      "noaug_boundary_f_pct": 37.5461348904298,
+      "augmentation_iou_gain_pp": 15.476167808387217,
+      "augmentation_boundary_f_gain_pp": 13.980202178248078,
+      "augmented_best_epoch": 34,
+      "noaug_best_epoch": 19,
+      "status": "complete"
+    },
+    {
+      "model": "segformer_b0",
+      "protocol": "exclude_exact_train_val_overlap",
+      "test_images": 106,
+      "augmented_iou_pct": 53.11315879533093,
+      "augmented_boundary_f_pct": 46.85879519860005,
+      "noaug_iou_pct": 52.715308922498934,
+      "noaug_boundary_f_pct": 46.083686356523785,
+      "augmentation_iou_gain_pp": 0.3978498728319977,
+      "augmentation_boundary_f_gain_pp": 0.7751088420762642,
+      "augmented_best_epoch": 13,
+      "noaug_best_epoch": 9,
+      "status": "complete"
+    },
+    {
+      "model": "segformer_b0",
+      "protocol": "original_test",
+      "test_images": 110,
+      "augmented_iou_pct": 52.219877515229584,
+      "augmented_boundary_f_pct": 46.15043423074023,
+      "noaug_iou_pct": 51.4706308043485,
+      "noaug_boundary_f_pct": 45.13312675503645,
+      "augmentation_iou_gain_pp": 0.7492467108810814,
+      "augmentation_boundary_f_gain_pp": 1.017307475703781,
+      "augmented_best_epoch": 13,
+      "noaug_best_epoch": 9,
+      "status": "complete"
+    },
+    {
+      "model": "unetformer_resnet18",
+      "protocol": "exclude_exact_train_val_overlap",
+      "test_images": 106,
+      "augmented_iou_pct": 57.35866569191777,
+      "augmented_boundary_f_pct": 52.923289898686605,
+      "noaug_iou_pct": 56.03676817794123,
+      "noaug_boundary_f_pct": 50.35633974050485,
+      "augmentation_iou_gain_pp": 1.3218975139765448,
+      "augmentation_boundary_f_gain_pp": 2.566950158181754,
+      "augmented_best_epoch": 43,
+      "noaug_best_epoch": 25,
+      "status": "complete"
+    },
+    {
+      "model": "unetformer_resnet18",
+      "protocol": "original_test",
+      "test_images": 110,
+      "augmented_iou_pct": 56.15872661415771,
+      "augmented_boundary_f_pct": 51.76708737840365,
+      "noaug_iou_pct": 55.592626458007565,
+      "noaug_boundary_f_pct": 49.8054940909694,
+      "augmentation_iou_gain_pp": 0.5661001561501422,
+      "augmentation_boundary_f_gain_pp": 1.9615932874342548,
+      "augmented_best_epoch": 43,
+      "noaug_best_epoch": 25,
+      "status": "complete"
+    }
+  ]
+}

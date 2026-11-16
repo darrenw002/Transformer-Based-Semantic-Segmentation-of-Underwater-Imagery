@@ -1,0 +1,5 @@
+# Reuse the verified PyTorch environment and add the hybrid-model dependencies.
+-r requirements-segformer.txt
+torchvision==0.23.0
+timm==1.0.22
+einops==0.8.1
